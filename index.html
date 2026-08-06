@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TechNova Store - Tienda de Electrodomésticos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechNova Store: tu tienda online de productos electrónicos y electrodomésticos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/gadgets-icon.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="assets/js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="branding" role="button" tabindex="0" aria-label="Ir a la página de inicio de TechNova Store">
+            <div class="brand-logo" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#22d3ee"/>
+                            <stop offset="100%" stop-color="#008ba4"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="8" y="8" width="48" height="48" rx="12" fill="url(#grad1)"/>
+                    <rect x="18" y="18" width="28" height="28" rx="5" fill="#0b2545"/>
+                    <path d="M24 24h7v4h-7zM33 24h7v4h-7zM24 33h4v7h-4z" fill="#22d3ee"/>
+                    <path d="M32 33h8v4h-8zM33 37h4v4h-4z" fill="#22d3ee"/>
+                    <circle cx="24" cy="24" r="1.6" fill="#fff"/>
+                    <circle cx="40" cy="24" r="1.6" fill="#fff"/>
+                    <circle cx="24" cy="40" r="1.6" fill="#fff"/>
+                    <circle cx="40" cy="40" r="1.6" fill="#fff"/>
+                    <path d="M14 32h4M46 32h4M32 14v4M32 46v4" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="navigation-header">
+                <h1 class="brand-name">Tech<b>Nova</b> Store</h1>
+                <p class="brand-tagline">Tu tienda de <span>electrodomésticos</span> y <span>tecnología</span> ⚡</p>
+            </div>
+        </div>
+        <div class="checkout-header" role="button" tabindex="0" aria-label="Ir al carrito de compras">
+            <span class="cart-badge" id="cartCount">0</span>
+            <span class="material-symbols-outlined search-icon">
+                shopping_cart_checkout
+            </span>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-bar">
+            <search>
+                <input type="search"
+                    id="inputSearch"
+                    placeholder="Busca productos de electrodomésticos y tecnología..."
+                    autocomplete="off"
+                >
+            </search>
+        </div>
+
+        <div class="container-categories">
+        </div>
+
+        <div class="products-container">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h3>TechNova Store</h3>
+                <p>Electrodomésticos y tecnología al mejor precio, con envío garantizado a todo el país.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>📞 +54 351 11223</p>
+                <p>✉️ contacto@technovastore.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Horarios</h4>
+                <p>Lunes a Viernes: 9 a 19 hs</p>
+                <p>Sábados: 10 a 14 hs</p>
+            </div>
+            <p class="footer-copy">&copy; <span id="currentYear">2026</span> - Patricio Roldan para <strong>TechNova Store</strong></p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
